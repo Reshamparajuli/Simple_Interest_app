@@ -113,13 +113,16 @@ class _HomepageState extends State<Homepage> {
                     const SizedBox(
                       width: 20,
                     ),
-                    ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            reset();
-                          });
-                        },
-                        child: Text("reset")),
+                    SizedBox(
+                      height: 40,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            setState(() {
+                              reset();
+                            });
+                          },
+                          child: Text("reset")),
+                    ),
                   ],
                 ),
                 const SizedBox(
