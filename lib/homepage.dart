@@ -98,15 +98,18 @@ class _HomepageState extends State<Homepage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            if (formkey.currentState!.validate()) {
-                              result = calculate();
-                            }
-                          });
-                        },
-                        child: Text("Calculate")),
+                    SizedBox(
+                      height: 40,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            setState(() {
+                              if (formkey.currentState!.validate()) {
+                                result = calculate();
+                              }
+                            });
+                          },
+                          child: Text("Calculate")),
+                    ),
                     const SizedBox(
                       width: 20,
                     ),
